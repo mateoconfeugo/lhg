@@ -10,7 +10,6 @@
   :main lhg.core
   :dependencies [[org.clojure/clojure "1.5.1"] ; Lisp On JVM
                  [compojure "1.1.5"] ; Web routing]
-                 [org.clojars.technomancy/heroku-api "0.1-SNAPSHOT"]
                  [ring/ring-jetty-adapter "1.2.0"] ; Web Server
                  ]
   :plugins [[lein-heroku-deploy "0.1.0"]
