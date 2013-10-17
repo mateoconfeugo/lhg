@@ -13,7 +13,7 @@
 (def webapp (handler/site app-routes))
 
 (defn start [web-application port]
-  (ring/run-jetty web-application 8087))
+  (ring/run-jetty web-application {:port 8087 :join? false}))
 
 
 (defn -main [] (start webapp 8087))
