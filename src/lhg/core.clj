@@ -2,7 +2,8 @@
   (:require    [compojure.core :refer [defroutes GET]]
                [compojure.handler :as handler :refer [site]]
                [compojure.route :refer[files resources not-found]]
-               [ring.adapter.jetty :as ring :refer [run-jetty]]))
+               [ring.adapter.jetty :as ring :refer [run-jetty]])
+  (:gen-class))
 
 (defroutes app-routes
   (GET "/hello" [] "<h1>Hello World</h1>")
