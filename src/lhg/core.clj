@@ -17,4 +17,4 @@
   (ring/run-jetty web-application {:port port :join? false}))
 
 
-(defn -main [&port] (start webapp (Integer/parseInt (or (System/getenv "PORT") "8087"))))
+(defn -main [& port] (start webapp (Integer/parseInt (or (System/getenv "PORT") "8087"))))
