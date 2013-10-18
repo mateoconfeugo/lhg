@@ -1,7 +1,4 @@
-# lhg
-
-A Clojure library designed to ... well, that part is up to you.
-
+test deployment application
 ## Usage
 
 FIXME
