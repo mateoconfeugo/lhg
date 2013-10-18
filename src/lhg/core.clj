@@ -6,7 +6,7 @@
   (:gen-class))
 
 ;; routes
-(defroutes app-routes (GET "/" [] "<h1>lhg server is up</h1>"))
+(defroutes app-routes (GET "/" [] "<h1>lhg server is up, no really it is</h1>"))
 (def webapp (handler/site app-routes))
 
 (defn start [web-application port]
