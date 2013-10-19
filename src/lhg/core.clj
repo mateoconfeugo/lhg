@@ -8,7 +8,7 @@
 
 (defroutes app-routes (GET "/" [] "<h1>lhg server is up, no really it is</h1>"))
 (def webapp (handler/site app-routes))
-
+;;
 (defn start [web-application port]
   (run-jetty web-application {:port port :join? false}))
 
