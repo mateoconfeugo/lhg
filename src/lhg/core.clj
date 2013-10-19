@@ -5,7 +5,7 @@
   (:require [compojure.handler :as handler :refer [site]])
   (:gen-class))
 
-;;
+
 (defroutes app-routes (GET "/" [] "<h1>lhg server is up, no really it is</h1>"))
 (def webapp (handler/site app-routes))
 
